@@ -31,9 +31,14 @@
   }
   
   .nav__link {
-    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
     color: inherit;
+    text-decoration: underline;
+    text-underline-offset: 4px;
   }
+  
   
   .page-header__logo {
     width: 148px;
@@ -130,6 +135,7 @@
     font-weight: 400;
     line-height: 28px;
     word-spacing: 18px;
+    font-family: "Raleway", sans-serif;
   }
   
   .main-cover__button {
@@ -166,7 +172,7 @@
       
       .lots-section__grid {
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         gap: 25px;
         justify-content: flex-start;
       }
@@ -330,6 +336,10 @@
       }
       
       .contacts-list__address {
+        font-family: "Raleway" , sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
         margin-top: 4px;
       }
       
