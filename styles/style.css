@@ -154,7 +154,7 @@
         font-size: 40px;
         font-weight: 700;
         text-transform: uppercase;
-        margin-left: 64px;
+        padding-left: 64px;
         margin-bottom: 26px;
         color: #000;
       }
@@ -169,7 +169,7 @@
         display: flex;
         flex-wrap: wrap;
         gap: 25px;
-        justify-content: space-between;
+        justify-content: flex-start;
       }
       
       .lot-card {
