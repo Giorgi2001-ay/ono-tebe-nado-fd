@@ -57,7 +57,6 @@
   }
   
   .contacts__link {
-    text-decoration: none;
     color: inherit;
     text-underline-offset: 4px;
     text-decoration: underline;
@@ -326,7 +325,6 @@
       }
       
       .contacts-list__link {
-        text-decoration: none;
         color: inherit;
         text-underline-offset: 4px;
         text-decoration: underline;
