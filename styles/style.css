@@ -1,3 +1,4 @@
+/* === HEADER === */
 .page-header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
@@ -25,8 +26,8 @@
 .nav__item {
   font-size: 18px;
   font-weight: 400;
-  text-underline-offset: 4px;
   text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 .nav__link--active {
@@ -35,8 +36,8 @@
 
 .nav__link {
   font-family: "Raleway", sans-serif;
-  font-weight: 400;
   font-size: 18px;
+  font-weight: 400;
   color: inherit;
   text-decoration: underline;
   text-underline-offset: 4px;
@@ -48,29 +49,26 @@
 }
 
 .contacts {
-  font-style: normal;
   font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 24px;
   color: #000;
 }
 
 .contacts--header {
   padding-left: 160px;
-  font-size: 30px;
-  line-height: 24.3px;
-  letter-spacing: 0.18px;
 }
 
 .contacts--footer {
+  text-align: right;
   padding-left: 0;
-  padding-top: 1px;
 }
 
 .contacts__list {
   list-style: none;
   padding: 0;
   margin: 0;
-  font-size: 18px;
-  line-height: 24px;
   font-weight: 400;
 }
 
@@ -81,27 +79,19 @@
 .contacts__link {
   color: inherit;
   text-decoration: underline;
-  text-decoration-color: currentColor;
   text-decoration-thickness: 1px;
   text-underline-offset: 4px;
 }
 
 .contacts__address {
-  list-style-type: none;
   margin-top: 4px;
-  font-family: "Raleway", sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 24px;
 }
 
+/* === COVER === */
 .main-cover {
   position: relative;
-  background-image: url(../images/cover.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  color: white;
+  background: url(../images/cover.jpg) center / cover no-repeat;
+  color: #fff;
   text-transform: uppercase;
   z-index: 0;
 }
@@ -114,7 +104,6 @@
 }
 
 .main-cover__title {
-  text-transform: uppercase;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -126,16 +115,18 @@
   display: block;
   font-size: 100px;
   font-weight: 700;
-  line-height: 100%;
+  line-height: 1;
   letter-spacing: 30px;
 }
 
 .main-cover__line--center {
   text-align: center;
+  line-height: 125px;
 }
 
 .main-cover__line--right {
   text-align: right;
+  line-height: 120px;
 }
 
 .main-cover__spaced {
@@ -148,10 +139,9 @@
 
 .main-cover__content {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: baseline;
-  padding: 0 24px 55px 78px;
-  gap: 40px;
+  padding: 0 50px 55px;
 }
 
 .main-cover__subtitle {
@@ -170,15 +160,16 @@
   font-size: 22px;
   font-weight: 500;
   color: #fff;
-  text-align: center;
-  line-height: 51px;
   border: 1px solid #fff;
   background: transparent;
+  line-height: 51px;
+  text-align: center;
   cursor: pointer;
 }
 
+/* === LOTS SECTION === */
 .lots-section {
-  padding: 179px 0 0;
+  padding-top: 179px;
 }
 
 .lots-section__title {
@@ -211,12 +202,12 @@
   width: 334px;
   min-height: 563px;
   padding: 51px 40px 48px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   color: #fff;
   text-decoration: none;
   flex-shrink: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .lot-card__overlay {
@@ -268,6 +259,7 @@
   margin-left: 64px;
 }
 
+/* === ABOUT SECTION === */
 .about-section {
   margin-top: 148px;
 }
@@ -328,6 +320,7 @@
   margin-top: 25px;
 }
 
+/* === FOOTER === */
 .site-footer {
   padding: 180px 50px 88px;
 }
