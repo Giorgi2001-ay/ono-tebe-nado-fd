@@ -1,75 +1,81 @@
 .page-header {
-    display: grid;
-    grid-template-columns: 1fr min-content 1fr;
-    align-items: center;
-    padding: 92px 24px;
-  }
-  
-  .page-header__nav {
-    display: flex;
-    justify-self: center;
-  }
-  
-  .nav__list {
-    display: flex;
-    gap: 32px;
-    list-style-type: circle;
-    padding-right: 7px;
-    margin: 0;
-  }
-  
-  .nav__item {
-    font-size: 18px;
-    font-weight: 400;
-    text-underline-offset: 4px;
-    text-decoration: underline;
-  }
-  
-  .nav__item--active {
-    list-style-type: none;
-    text-decoration: none;
-  }
-  
-  .nav__link {
-    font-family: "Raleway", sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    color: inherit;
-    text-decoration: underline;
-    text-underline-offset: 4px;
-  }
-  
-  
-  .page-header__logo {
-    width: 148px;
-    height: 105px;
-  }
-  
-  .page-header__contacts {
-    padding-left: 160px;
-    font-size: 18px;
-    line-height: 24.3px;
-    letter-spacing: 0.18px;
-    font-family: "Raleway", sans-serif;
-    list-style: none;
-    font-style: normal;
-  }
-  
-  .contacts__list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .contacts__link {
-    color: inherit;
-    text-underline-offset: 4px;
-    text-decoration: underline;
-  }
-  
-  .contacts__address {
-    margin-top: 4px;
-  }
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  padding: 92px 24px;
+}
+
+.page-header__nav {
+  display: flex;
+  justify-self: center;
+}
+
+.nav__list {
+  display: flex;
+  gap: 32px;
+  list-style-type: circle;
+  padding-right: 7px;
+  margin: 0;
+}
+.nav__item--no-marker{
+  list-style-type: none;
+}
+
+.nav__item {
+  font-size: 18px;
+  font-weight: 400;
+  text-underline-offset: 4px;
+  text-decoration: underline;
+}
+.nav__link--active{
+  text-decoration: none;
+}
+
+.nav__link {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+
+.page-header__logo {
+  width: 148px;
+  height: 105px;
+}
+
+.contacts  {
+  padding-left: 160px;
+  font-size: 30px;
+  line-height: 24.3px;
+  letter-spacing: 0.18px;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+}
+
+.contacts__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+}
+.contacts__list li:not(:last-child) {
+  margin-bottom: 6px;
+}
+
+.contacts__link {
+  color: inherit;
+  text-underline-offset: 4px;
+  text-decoration: underline;
+}
+
+.contacts__address {
+  margin-top: 4px;
+}
   .main-cover {
     position: relative;
     background-image: url(../images/cover.jpg);
@@ -81,7 +87,7 @@
     z-index: 0;
   }
   
-  .main-cover__overlay {
+  .overlay {
     position: absolute;
     inset: 0;
     background-color: rgba(0, 0, 0, 0.6);
@@ -89,6 +95,7 @@
   }
   
   .main-cover__title {
+    text-transform: uppercase;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -103,15 +110,14 @@
     line-height: 100%;
     letter-spacing: 30px;
   }
+
   
   .main-cover__line--center {
     text-align: center;
-    line-height: 125px;
   }
   
   .main-cover__line--right {
     text-align: right;
-    line-height: 120px;
   }
   
   .main-cover__spaced {
@@ -127,7 +133,7 @@
     justify-content: space-evenly;
     align-items: baseline;
     padding: 0 24px 55px 78px;
-    gap: 59px;
+    gap: 40px;
   }
   
   .main-cover__subtitle {
@@ -139,6 +145,7 @@
   }
   
   .main-cover__button {
+    text-transform: uppercase;
     width: 256px;
     height: 51px;
     font-family: "Raleway", sans-serif;
@@ -172,7 +179,7 @@
       
       .lots-section__grid {
         display: flex;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         gap: 25px;
         justify-content: flex-start;
       }
@@ -305,7 +312,7 @@
         padding: 180px 50px 88px;
       }
       
-      .site-footer__container {
+      .site-footer__container{
         max-width: 1140px;
         margin: 0 auto;
         display: grid;
@@ -313,33 +320,58 @@
         gap: 140px;
         align-items: flex-start;
       }
-      
-      .site-footer__contacts {
+      .contacts {
         font-style: normal;
+        font-family: "Raleway", sans-serif;
+        color: #000;
       }
       
-      .contacts-list {
-        list-style: none;
+      .contacts--header {
+        padding-left: 160px;
+      }
+      
+      .contacts--footer {
+        padding-left: 0;
+        padding-top: 1px;
+      }
+      
+      .contacts__list {
+        list-style: none; 
         padding: 0;
         margin: 0;
         font-size: 18px;
         line-height: 24px;
-        font-family: "Raleway", sans-serif;
         font-weight: 400;
       }
-      
-      .contacts-list__link {
+      .contacts__link {
         color: inherit;
-        text-underline-offset: 4px;
         text-decoration: underline;
+        text-decoration-color: currentColor;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 4px;
+        
       }
       
-      .contacts-list__address {
-        font-family: "Raleway" , sans-serif;
+      .contacts__address {
+        list-style-type: none;
+        margin-top: 4px;
+        font-family: "Raleway", sans-serif;
         font-weight: 400;
         font-size: 18px;
         line-height: 24px;
-        margin-top: 4px;
+      }
+      
+      .site-footer {
+        padding: 180px 50px 88px;
+      }
+      
+      .site-footer__container {
+        max-width: 1140px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        gap: 140px;
+        align-items: flex-start;
       }
       
       .site-footer__nav {
@@ -358,8 +390,7 @@
         font-family: "Raleway", sans-serif;
         font-weight: 400;
         text-decoration: underline;
-        white-space: nowrap;
-        text-underline-offset: 3px;
+        text-underline-offset: 4px;
         color: #000;
         display: block;
         margin-bottom: 10px;
@@ -378,4 +409,3 @@
         width: 48px;
         height: 48px;
       }
-      

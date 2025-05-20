@@ -13,8 +13,8 @@
     <header class="page-header">
       <nav class="page-header__nav">
         <ul class="nav__list">
-          <li class="nav__item nav__item--active">
-            <a href="#0" class="nav__link">главная</a>
+          <li class="nav__item nav__item--no-marker">
+            <a href="#0" class="nav__link nav__link--active">главная</a>
           </li>
           <li class="nav__item">
             <a href="#0" class="nav__link">посмотреть лоты</a>
@@ -24,10 +24,10 @@
           </li>
         </ul>
       </nav>
-      <a href="#" class="page-header__logo-link">
+      <a class="page-header__logo-link">
         <img src="./images/logo-black.svg" alt="Логотип аукциона" class="page-header__logo" />
       </a>
-      <address class="page-header__contacts">
+      <address class="contacts contacts--header">
         <ul class="contacts__list">
           <li><a href="tel:+99995555555" class="contacts__link">+9 999 555 5555</a></li>
           <li><a href="mailto:info@sobaka.ge" class="contacts__link">info@sobaka.ge</a></li>
@@ -37,25 +37,23 @@
     </header>
     <main>
     <section class="main-cover">
-      <div class="main-cover__overlay"></div>
+      <div class="overlay"></div>
       <h1 class="main-cover__title">
         <span class="main-cover__line">
-          О<span class="main-cover__spaced">НО</span>
+        oн<span class="main-cover__spaced">о</span>
         </span>
         <span class="main-cover__line main-cover__line--center">
-          ТЕ<span class="main-cover__spaced">БЕ</span>
+          теб<span class="main-cover__spaced">е</span>
         </span>
         <span class="main-cover__line main-cover__line--right">
-          <span class="main-cover__spaced">Н</span>AД<span class="main-cover__nospace">О</span>
+          <span class="main-cover__spaced">н</span>ад<span class="main-cover__nospace">о</span>
         </span>
       </h1>
       <div class="main-cover__content">
         <p class="main-cover__subtitle">Аукцион вещей, в которые никто не верил</p>
-        <button class="main-cover__button">СДЕЛАТЬ СТАВКУ</button>
+        <button class="main-cover__button">сделать ставку</button>
       </div>
     </section>
-
-    <!-- HTML секция LOTS -->
     <section class="lots-section">
       <h2 class="lots-section__title">Лоты</h2>
       <div class="lots-section__container">
@@ -115,8 +113,8 @@
     </main>
     <footer class="site-footer">
       <div class="site-footer__container">
-        <address class="site-footer__contacts">
-          <ul class="contacts-list">
+        <address class="contacts contacts--footer">
+          <ul class="contacts__list">
             <li><a href="tel:+99995555555" class="contacts-list__link">+9 999 555 5555</a></li>
             <li><a href="mailto:info@sobaka.ge" class="contacts-list__link">info@sobaka.ge</a></li>
             <li class="contacts-list__address">
